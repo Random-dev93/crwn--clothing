@@ -4,7 +4,7 @@ import {addItem} from '../../redux/cart/cart.actions';
 import CustomButton from '../custom-button/custom-button.component';
 
 import './collection-item.styles.scss';
-import { dispatch } from '../../../../Library/Caches/typescript/3.6/node_modules/rxjs/internal/observable/pairs';
+import { dispatch } from 'node_modules/rxjs/internal/observable/pairs.js'
 
 const CollectionItem = ({ item, addItem }) => {
 
