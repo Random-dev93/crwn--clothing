@@ -3,7 +3,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: "AIzaSyBAaxbNsf2Je4FKNFjlkToqmkbP2S4LM0Q",
+    apiKey: "AIzaSyBAaxbNsf2Je4FKNFjlkToqmkbP2S4LM0Q",
     authDomain: "crwn-clothing-db-1d5f5.firebaseapp.com",
     databaseURL: "https://crwn-clothing-db-1d5f5.firebaseio.com",
     projectId: "crwn-clothing-db-1d5f5",
@@ -45,6 +45,6 @@ export const firestore = firebase.firestore();
 
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: 'select_account' });
-export const signInWithGoogle = () => auth.signInWithPopup(provider);
+export const signInWithGoogle = () => auth.signInWithRedirect(provider);
 
 export default firebase;
